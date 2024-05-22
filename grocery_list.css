@@ -1,0 +1,49 @@
+/* Title */
+h1 {
+  text-align: center !important;
+  margin-top: 5%;
+}
+
+/* Grid Areas */
+.Header {
+  grid-area: header;
+  background-color: rgb(255, 250, 223) !important;
+  text-align: center !important;
+}
+.section-1 {
+  grid-area: first;
+  padding: 10% !important;
+}
+.section-2 {
+  grid-area: second;
+  padding: 10% !important;
+}
+.image img {
+  grid-area: image;
+  align-content: center !important;
+  height: 90%;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  object-fit: cover !important;
+}
+
+/* Grid Layout & styling */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "first second image";
+  gap: 10px;
+  background-color: #68503b;
+  padding: 10px;
+  margin: 5%;
+}
+
+.grid-container > div {
+  background-color: rgb(216, 252, 255);
+  text-align: left;
+  -webkit-text-fill-color: rgb(46, 45, 45);
+  padding: 20px 0;
+  font-size: 20px;
+}
